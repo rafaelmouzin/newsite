@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="icon" href="img/imglogo.webp" type="image/x-icon">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="d-flex align-items-center bg-body-tertiary py-4 h-100">
+    <main class="w-100 m-auto form-container">
+        <form>
+            <img src="img/imglogo.webp" class="mb-2" height="135" width="135">
+            <h3 class="h3 fw-normal">Faça seu cadastro</h3>
+
+            <div class="row g-3 mt-4">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nome" name="nome" aria-label="Nome" required>
+                </div>
+
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Sobrenome" name="sobrenome" aria-label="Sobrenome" required>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="CPF" name="CPF" aria-label="CPF" required>
+                </div>
+
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Data de Nascimento" name="Data de Nascimento" aria-label="Data de Nascimento" required>
+                </div>
+            </div>
+
+            
+            <div class="row g-3 mt-3">
+                <div class="col-md-12 mt-3">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail" name="email" required>
+                </div>
+
+                <div class="col-md-12 mt-3">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" name="senha" required>
+                </div>
+
+                <div class="col-md-12 mt-3">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Confirmar Senha" name="senha" required>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-3">
+                <div class="col-md-12 mt-3">
+                    <input type="text" class="form-control" id="inputCity" placeholder="+55 (00) 00000-0000" name="Numero Telefone" required>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <input type="text" class="form-control" id="inputAddress" name="endereco" placeholder="Endereço" required>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputCity" placeholder="Cidade" name="cidade" required>
+                </div>
+                <div class="col-md-6">
+                    <select id="inputState" class="form-select" name="estado" required>
+                        <option selected disabled>Estado</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+                </div>
+
+
+
+                <div class="col-md-12">
+                    <select id="inputState" class="form-select" name="Tipo de Usuario" required>
+                        <option selected disabled>Tipo de Usuário</option>
+                        <option>Adminitrador</option>
+                        <option>Cliente</option>
+                        <option>Funcionario</option>
+                    </select>
+            </div>
+
+            <div class="col-12 py-4">
+                <button type="submit" class="btn btn-primary">Cadastrar-se</button>
+            </div>
+
+            
+        </form>
+    </main>
+</body>
+
+<footer class="bg-dark text-light text-center py-3 position-absolute bottom-0 w-100">
+    © 2024 Rafael Mouzin, Yuri Guerra
+</footer>
+
+</html>
